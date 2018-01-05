@@ -1,0 +1,102 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+Void svår(){
+            while(! gameOver){
+            int num1,num2,sum,guess;
+            num1 = 1+rand()%101;
+            num2 = 1+rand()%101;
+            sum = num1 + num2;
+            cout << "Vad är " << num1 << " + " << num2 << endl;
+            cin >> guess;
+            if(guess != sum){
+                cout << "Fel det rätta svaret är: " << sum << endl;
+            }else{
+                cout << "Du Har rätt Det Rätta Svaret är " << sum << endl;
+            }
+        }  
+void medel(){
+        while(! gameOver){
+            int num1,num2,sum,guess;
+            num1 = 1+rand()%45;
+            num2 = 1+rand()%45;
+            sum = num1 + num2;
+            cout << "Vad är " << num1 << " + " << num2 << endl;
+            cin >> guess;
+            if(guess != sum){
+                cout << "Fel det rätta svaret är: " << sum << endl;
+            }else{
+                cout << "Du Har rätt Det Rätta Svaret är " << sum << endl;
+            }
+        }  
+        
+    
+Void lätt(){
+        while(! gameOver){
+            int num1,num2,sum,guess;
+            num1 = 1+rand()%10;
+            num2 = 1+rand()%10;
+            sum = num1 + num2;
+            cout << "Vad är " << num1 << " + " << num2 << endl;
+            cin >> guess;
+            if(guess != sum){
+                cout << "Fel det rätta svaret är: " << sum << endl;
+            }else{
+                cout << "Du Har rätt Det Rätta Svaret är " << sum << endl;
+            }
+        }  
+    }     
+    
+int main()
+{           
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    bool gameOver = false;
+    cout << "What is your name? \n" << endl;
+    string name;
+    cin >> name;
+    cout << "hello, " << name << endl;
+    cout << "Vi ska spela lite mate (Addition)\n" << endl;
+    cout << "Nu ska du få välja vilken du vill ha\n1 = lätt \n2 = medel \n 3 = svår \n Välj en av dessa genom att skriva in deras nummer skriv 1 om du vill ha lätt" << endl;
+    string choice;
+    cin >> choice;
+    if(choice == 1){
+        
+        lätt();  
+    }
+    if(choice == 2){
+        
+        medel();
+    }
+    if(choice == 3){
+        
+      svår();
+    }
+    
+        
+    return 0;
+
+
+
+
