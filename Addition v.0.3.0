@@ -1,0 +1,71 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool gameOver = false;
+
+// Fix this Find out if it is Void or void, (Fixed)
+void hard()
+    {
+            while(! gameOver){
+            int num1,num2,sum,guess;
+            num1 = 1+rand()%101;
+            num2 = 1+rand()%101;
+            sum = num1 + num2;
+            cout << "Vad är " << num1 << " + " << num2 << endl;
+            cin >> guess;
+            if(guess != sum){
+                cout << "Fel det rätta svaret är: " << sum << endl;
+            }else{
+                cout << "Du Har rätt Det Rätta Svaret är " << sum << endl;
+            }
+           
+        }  
+    }
+        
+
+    
+int main()
+{           
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ while(1 != 2)
+ {
+    
+    
+    bool gameOver = false;
+    cout << "What is your name? \n" << endl;
+    string name;
+    cin >> name;
+    cout << "hello, " << name << endl;
+    cout << "Vi ska spela lite mate (Addition)\n" << endl;
+    cout << "Nu ska du få välja vilken du vill ha\n1 = Addition \n2 = Avsluta \nVälj en av dessa genom att skriva in deras nummer skriv 1 om du vill ha lätt" << endl;
+    string choice;
+    cin >> choice;
+    if(choice == "2"){
+        
+    exit;
+    }
+
+    
+    if(choice == "1"){
+        
+    hard();
+    }
+    else{
+        cout << "Det här är inte 1 eller 2 försök igen." << endl;
+    }
+}    
+}
+
+    
+    
+    
